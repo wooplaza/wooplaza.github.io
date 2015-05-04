@@ -1,885 +1,283 @@
 <!DOCTYPE html>
-<html>
-  <head>    
-    <meta charset="UTF-8">
-    <title>Woo Plaza - Free Online Stores</title>
-    <meta name="description" content="Woo Plaza - Free Online Stores">
-    <meta name="author" content="Woo Plaza">
-    
-    <!-- Mobile Specific Meta -->   
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Mobile viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <!-- Bootstrap -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="canonical" href="http://www.wooplaza.com/" />
 
-    <!-- Font awesome -->
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <!-- for Google -->
+    <meta name="description"      content="WooPlaza is a friendly service to create beautiful online stores for free. It is a powerful ecommerce platform that includes everything you need to create an online store and sell online. Check out the demo stores on the website." />
+    <meta name="keywords"         content="WooPlaza, create online store, free online store, sell online India, demo online stores, online store builder, build ecommerce website, WooCommerce" />
+    <meta name="copyright"        content="Copyright 2015 WooPlaza. All rights reserved" />
+    <meta name="application-name" content="WooPlaza" />
+    <link rel="author" href="https://plus.google.com/[YOUR PERSONAL G+ PROFILE HERE]"/>
+    <link rel="publisher" href="https://plus.google.com/[YOUR BUSINESS G+ PROFILE HERE]"/>
 
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Facebook card -->
+    <meta property="og:image" content="http://www.wooplaza.com/img/wp-logo.png" />
+    <meta property="og:title" content="Ecommerce Software, Online Store Builder, Website Store Hosting Solution, Create online store - WooPlaza" />
+    <meta property="og:site_name" content="WooPlaza" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.wooplaza.com" />
+    <meta property="og:description" content="WooPlaza is a friendly service to create beautiful online stores for free. It is a powerful ecommerce platform that includes everything you need to create an online store and sell online. Check out the demo stores on the website." />
+    <meta property="og:locale" content="en_US" />            <!-- Default -->
+    <meta property="article:author" content="https://www.facebook.com/wooplaza" />
+    <meta property="article:publisher" content="https://www.facebook.com/wooplaza" />
+    <meta property="fb:app_id" content="[FB_APP_ID]" />
 
-    <!-- Owl-carousel style -->
-    <link rel="stylesheet" href="assets/css/owl.carousel.css">
-    <link rel="stylesheet" href="assets/css/owl.theme.css">
+    <!-- Twitter card -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="WooPlaza">
+    <meta property="twitter:description" content="WooPlaza is a friendly service to create beautiful online stores for free. It is a powerful ecommerce platform that includes everything you need to create an online store and sell online. Check out the demo stores on the website.">
+    <meta property="twitter:image" content="http://www.wooplaza.com/img/wp-logo.png">
+    <meta property="twitter:site" content="@WooPlaza">
+    <meta property="twitter:account_id" content="[ACCOUNT_ID]" />
 
-    <!-- magnific style -->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 
-    <!-- Custom stylesheet-->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css" media="screen">
+    <title>WooPlaza - Create online store for eCommerce</title>
 
-    <!-- Added google font -->
-    <link href='http://fonts.googleapis.com/css?family=Dosis:400,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    <!-- External CSS -->
+    <link href="http://maxcdn.bootstrapcdn.com/bootswatch/3.3.4/flatly/bootstrap.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Raleway|Pacifico' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-    <!--Fav and touch icons-->
-    <link rel="shortcut icon" href="assets/images/icons/favicon.ico">
-    <link rel="apple-touch-icon" href="assets/images/icons/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/icons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/icons/apple-touch-icon-114x114.png">
+    <!-- Custom styles for this template -->
+    <link href="custom.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+
   </head>
+
   <body>
- 
-    <!-- Preloader -->
-      <div id="faceoff">
-        <div id="preloader"></div>
-        <div class="preloader-section"></div>
-      </div>
-    <!-- Preloader end -->
-  
-    <!-- header start -->
-    <header id="home" class="navbar-fixed-top">
-      <nav class="navbar navbar-default" role="navigation">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-3">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                <!-- <h1><a class="nav-brand" href=""> <img src="assets/images/logo.png" alt="gigninga"></a></h1> -->
-                <span style="display: inline-block; visibility: visible;"><a href="" class="btn nav-brand"><i class="fa fa-shopping-cart"></i> Grape</a></span>
-              </div>
-            </div>
-            <div class="col-sm-7">
-              <!-- Collect the nav toggling -->
-              <div class="collapse navbar-collapse navbar-example" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                  <li><a href="#intro">Intro</a></li>
-                  <li><a href="#feature">Feature</a></li>
-                  <li><a href="#description">Description</a></li>
-                  <li><a href="#screenshot">Screenshots</a></li>
-                  <li><a href="#download">Download</a></li>
-                  <li><a href="#contact">Contact</a></li>
-                </ul>             
-              </div><!-- /.navbar-collapse -->
-            </div>
-            <div class="col-sm-2 mob-right">
-              <ul class="app pull-right">
-                <li><a href=""><i class="fa fa-mobile-phone"></i></a></li>
-                <li><a href=""><i class="fa fa-tablet"></i></a></li>
-                <li><a href=""><i class="fa fa-laptop"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div><!-- /.container -->
-      </nav>
-    </header>
-    <!-- header end -->
+<div id="fb-root"></div>
 
-    <!-- banner start -->
-    <section id="banner" class="banner">
-      <div class="trans-bg">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-sm-12">              
-            <h1>Test heading</h1>
-              <h2><a href="" class="lg-logo default-color">GRAPE</a></h2> <!--/ .lg-logo -->
-               <div class="flex_text text-slider">
-                  <ul class="slides">
-                      <li>Present your beautiful app with GRAPE</li>
-                      <li>Not only app landing you can use GRAPE as business template</li>
-                      <li>You can find hundreds but ultimately you love us</li>
-                  </ul>
-                </div>
-                <!--/.text-slider end-->                
-                <ul class="app">
-                  <li><a href=""><i class="fa fa-apple"></i></a></li>
-                  <li><a href=""><i class="fa fa-android"></i></a></li>
-                  <li><a href=""><i class="fa fa-windows"></i></a></li>
-                </ul>  
-                <div class="download-block text-center">
-                   <a href="#intro" class="btn-download">Learn More</a><a href="#subscription" class="btn-download">Sign Up</a>
-                 </div>             
-            </div>
-          </div>
-        </div>
-      </div> <!-- /.trans-bg -->                 
-    </section>
-    <!-- banner end -->
-
-    <!-- intro start -->
-    <section id="intro" class="intro white">
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12 text-center">
-            <span class="sub-head wow fadeInLeft">present your</span>
-            <div class="title wow fadeInRight">
-              <h2>awesome app</h2>
-            </div>
-          </div>
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#top" style="font-family: 'Pacifico', cursive">WP</a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <button type="button" class="btn btn-primary navbar-toggle collapsed pull-right visible-xs" data-toggle="offcanvas">Toggle nav</button>
         </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="app-block wow bounceInUp" data-wow-delay=".1s">
-              <i class="fa fa-bolt"></i>
-              <h3>quick & efficiency</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>            
-          </div>
-          <div class="col-sm-4">
-            <div class="app-block wow bounceInUp" data-wow-delay=".2s">
-              <i class="fa fa-life-ring"></i>
-              <h3>any time support</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>            
-          </div>
-          <div class="col-sm-4">
-            <div class="app-block wow bounceInUp" data-wow-delay=".3s">
-              <i class="fa fa-paint-brush"></i>
-              <h3>unique design</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#top">Home</a></li>
+            <li><a href="#intro">Intro</a></li>
+            <li><a href="#why">Why</a></li>
+            <li><a href="#why">Features</a></li>
+            <li><a href="#why">FAQ</a></li>
+          </ul>
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Sign up">
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="app-block wow bounceInUp" data-wow-delay=".4s">
-              <i class="fa fa-angellist"></i>
-              <h3>corporate branding</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="app-block wow bounceInUp" data-wow-delay=".5s">
-              <i class="fa fa-thumbs-o-up"></i>
-              <h3>best in qulality</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="app-block wow bounceInUp" data-wow-delay=".6s">
-              <i class="fa fa-puzzle-piece"></i>
-              <h3>idea making</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>            
-          </div>
-        </div>
+            <button type="submit" class="btn btn-primary">Go</button>
+          </form>
+        </div><!--/.nav-collapse -->
       </div>
-    </section>
-    <!-- intro end -->
+    </nav>
 
-    <!-- feature start -->
-    <section id="feature" class="feature">
-      <div class="trans-bg">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 text-center">
-              <h2 class="wow swing" data-wow-delay=".1s">crazy feature</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-4">
-              <ul class="feature-list-left">
-                <li>
-                  <div class="feature-detail wow fadeInLeft" data-wow-delay=".4s">
-                    <h4>Custom scrollbars</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                  </div>                          
-                  <div class="feature-icon wow fadeInLeft" data-wow-delay=".3s">
-                    <i class="fa fa-exchange"></i>
-                  </div>
-                </li>
-                <li>
-                  <div class="feature-detail wow fadeInLeft" data-wow-delay=".4s">
-                    <h4>Robust demo package</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                  </div>
-                  <div class="feature-icon wow fadeInLeft" data-wow-delay=".3s">
-                    <i class="fa fa-star-half-o"></i>
-                  </div>
-                </li>
-                <li>
-                  <div class="feature-detail wow fadeInLeft" data-wow-delay=".4s">
-                    <h4>Responsive support</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                  </div>
-                  <div class="feature-icon wow fadeInLeft" data-wow-delay=".3s">
-                    <i class="fa fa-arrows-alt"></i>
-                  </div>                  
-                </li>
-                <li>
-                  <div class="feature-detail wow fadeInLeft" data-wow-delay=".4s">
-                    <h4>Tons of API callbacks</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                  </div>
-                  <div class="feature-icon wow fadeInLeft" data-wow-delay=".3s">
-                    <i class="fa fa-cog"></i>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="col-sm-4 text-center">
-              <img class="wow bounceInUp" src="assets/images/iphone_full.png" alt="" title="">
-            </div>
-            <div class="col-sm-4">
-              <ul class="feature-list-right">
-                <li>
-                  <div class="feature-icon wow fadeInRight" data-wow-delay=".3s">
-                    <i class="fa fa-arrows-alt"></i>
-                  </div>
-                  <div class="feature-detail wow fadeInRight" data-wow-delay=".4s">
-                    <h4>Responsive support</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="feature-icon wow fadeInRight" data-wow-delay=".3s">
-                    <i class="fa fa-cog"></i>
-                  </div>
-                  <div class="feature-detail wow fadeInRight" data-wow-delay=".4s">
-                    <h4>Tons of API callbacks</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="feature-icon wow fadeInRight" data-wow-delay=".3s">
-                    <i class="fa fa-mobile"></i>
-                  </div>
-                  <div class="feature-detail wow fadeInRight" data-wow-delay=".4s">
-                    <h4>iOS / Surface / Android</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="feature-icon wow fadeInRight" data-wow-delay=".3s">
-                    <i class="fa fa-undo"></i>
-                  </div>
-                  <div class="feature-detail wow fadeInRight" data-wow-delay=".4s">
-                    <h4>Auto-sliding</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div><!-- /.trans-bg -->
-    </section>
-    <!-- feature end -->
+    <!-- Begin page content -->
+    <div class="container-fluid" id="top">
 
-    <!-- description start -->
-    <section id="description" class="description white">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 text-center">
-            <span class="sub-head wow fadeInLeft">think about</span>
-            <div class="title wow fadeInRight">
-              <h2>why GRAPE best</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6 wow pulse" data-wow-delay=".5s">
-            <img class="img-responsive" src="assets/images/iphone_half.png" alt="Why to choose us">
-          </div>
-          <div class="col-sm-6">
-            <ul class="description-list">
-              <li class="wow fadeInRight"><span class="des-icon"><i class="fa fa-bomb"></i></span>Nam nec tellus a odio tincidunt auctor a ornare odio</li>
-              <li class="wow fadeInRight"><span class="des-icon"><i class="fa fa-paw"></i></span>Nam nec tellus a odio tincidunt</li>
-              <li class="wow fadeInRight"><span class="des-icon"><i class="fa fa-birthday-cake"></i></span>Nam nec tellus a odio tincidunt auctor </li>
-              <li class="wow fadeInRight"><span class="des-icon"><i class="fa fa-fire-extinguisher"></i></span>Nam nec tellus a odio </li>
-              <li class="wow fadeInRight"><span class="des-icon"><i class="fa fa-magic"></i></span>Nam nec tellus a odio tincidunt auctor a ornare odio</li>
-              <li class="wow fadeInRight"><span class="des-icon"><i class="fa fa-rebel"></i></span>Nam nec tellus a odio tincidunt auctor a ornare</li>
+      <div class="row row-offcanvas row-offcanvas-right">
+
+        <div class="col-xs-12 col-sm-9">
+          <div class="jumbotron">
+            <h1>Opening an online store</h1>
+            <h2>The story of how a talented lady became a successful eCommerce seller</h2>
+            <p>Once upon a time, in the magnificent land of India, there lived a fair maiden of name Shikha. Shikha was a creative lass who made all sorts of beautiful goods. "Shikha, your hands are pure magic", said her friends, "Why don't you sell your goods online?"</p>
+
+			<p>Now, while Shikha was extraordinarily talented in many ways, she had no idea how to open a store online. She asked her friends who suggested that she talk to the biggest merchant in the land.
+			</p>
+
+            <h2>The large marketplace</h2>
+            <p>Snapazonkart burped after his hearty meal. He had discovered pots of gold in a faraway land and was doing very well indeed. He picked up the ringing phone and heard a small voice on the other end. She wanted to open an online store. "Of course we'll help you, you little seller. Just courier your VAT, TIN, AFGT and JYIGG papers, along with notarised copies of your address proof, your grandmother's birth certificate and neighbour's maiden name. We'll set up a store for you right away."</p>
+
+			<p>Shikha thanked the man and felt very sad. How would she get all those papers? It would take a long time and cost a lot of money. All she wanted to do was to open an online store and see how it goes. A friend referred her to another merchant. He's not so pompous and will definitely help you, he assured her.</p>
+
+            <h2>The niche marketplace</h2>
+            <p>Craftsirraw was eager for sellers. His business was constantly under threat from Snapazonkart. He welcomed Shikha with open arms and helped her set up a store on his site. He promised to advertise on her behalf and handle all monetary transactions. "Just focus on making your awesome goods and selling them", he said, smiling broadly. "Of course, I'll charge you a commission of 20-40 percent for my services."</p> 
+            <p>Shikha opened her store and got an initial flurry of orders. Though the commission ate into most of her profits, she was happy that she was at least able to sell online. But soon, orders started drying up. She couldn't do anything because she had no insight into the customers visiting her store. All she could do was cross her fingers and pray. Worse, Craftsirraw was not great at settling her payments, leaving her short of cash.</p>
+
+            <h2>The SaaS store</h2>
+            <p>She then approached Zeprocketify, a merchant who helped people open online stores on their own sites. He was glad to have her on board. Since she was just starting out, he suggested that she purchase the starter plan at a nominal cost of a thousand rupees a month. "You can always upgrade once your business grows", he assured her.</p>
+
+			<p>Boy, Shikha was glad or what! Finally, she had a store that she had complete control over. She signed up with a payment gateway and cut a deal with a courier provider. She was in business for real! It was a tough learning curve, and there were technical glitches, but it was worth it. However, customers were still not buying as much as she would have liked. She did some analysis and realised that she needed to add more products and variants. And more images for the products too.</p>
+
+			<p>"For that, you'll have to upgrade to our premium plan", Zeprocketify informed her sombrely, "and if you use our super premium plan, you'll be able to sell internationally too". Now, Shikha wasn't keen on risking several thousand rupees every month without knowing if it would work. She was caught in a dilemma.
+			</p>
+
+            <h2>Nirvana</h2>
+            <p>"Woo hoo! Open your online store for free", she heard a soothsayer outside her door. He told her about this new merchant who was just perfect for sellers like her. WooPlaza was his name. She decided to pay the man a visit.</p>
+
+			<p>His office was sparsely furnished but clean. He wore simple clothes and exuded earnestness. He spoke passionately about millions of potential sellers out there who could be online but aren't. He wanted to make it his life's mission to enable everyone to sell online. "We should make it as easy as possible for people to start selling online. We should build a community of sellers who will support each other and grow together. Sellers should be able to share marketing costs. They should have a way to get into customers' smartphones". He grew increasingly animated as he spoke.</p>
+
+			<p>He was almost rambling, but Shikha was fascinated. His enthusiasm was infectious. She found herself in agreement with almost everything he said. But she had to focus on her own store. "Can I really open and operate my store for free?". "Yes". "Without any limitations on number of products, variants or images?" she asked doubtfully. "Yes", he replied proudly, "no limits whatsoever". "But what's the catch?" "There's no catch", he replied with obvious sincerity, "See, we are building the Air Deccan of online selling. We want to make it possible for everyone to sell online. We plan to do that with a no-nonsense, no-frills service."
+			</p>
+
+            <h2>The questions</h2>
+            <h3>"What are the features you offer?" she asked</h3>
+            <p>"Let's see," he said, "as he ticked off the features one-by-one on his fingers"</p>
+            <ul>
+              <li>A full-fledged online store that you can open and operate for free</li>
+              <li>A beautiful storefront with a variety of professionally built themes to choose from</li>
+              <li>All themes are completely mobile optimized, giving your customers a flawless experience regardless of the device the are using</li>
+              <li>No limitations on the number of products, product categories, product images or product variants</li>
+              <li>All major eCommerce features, including order tracking, wish lists, discount engine, tax and shipping calculators, social media integration</li>
+              <li>No lock in. You can easily export your store data and host your store on your own.</li>
+              <li>Fully SEO optimized to help your store rank high on Google search results</li>
+              <li>Full support for Google Analytics, and you can view most reports from within your site</li>
+              <li>Integrates with all major payment gateways</li>
+              <li>Automatic free listing on the WooPlaza mobile app that helps small sellers reach customers' mobile phones</li>
             </ul>
-            <!-- /.description-list -->
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- description end-->
-
-    <!-- video start -->
-    <section id="video" class="video">
-      <div id="trans-bg" class="trans-bg">
-        <div class="video-container"><div id="player"></div><div class="video-mask"></div></div>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 text-center">
-              <div class="video-mask">
-                <h2 class="wow bounceInDown">how it works</h2>
-                    <a href="https://vimeo.com/45830194" class="play wow rollIn animated"></a>
-                <span class="wow bounceInUp">watch video</span>
-              </div>            
-            </div>
-          </div>
-        </div> <!-- /.trans-bg -->
-      </div>
-    </section>
-    <!-- video end -->
-
-    <!-- screenshot start -->
-    <section id="screenshot" class="screenshot white">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <span class="sub-head wow fadeInLeft">take a look</span>            
-            <div class="title wow fadeInRight">
-              <h2>screenshots</h2>
-            </div>
-            <div id="owl-demo" class="owl-carousel">
-                <div class="item screenshot-block">
-                  <img src="./assets/images/screenshot.jpg" alt="GRAPE">
-                  <div class="caption">
-                    <a class="test-popup-link" href="./assets/images/screenshot.jpg"><i class="fa fa-plus"></i></a>
-                  </div>
-                </div>
-                <div class="item screenshot-block">
-                  <img src="./assets/images/screenshot.jpg" alt="GRAPE">
-                  <div class="caption">
-                    <a class="test-popup-link" href="./assets/images/screenshot.jpg"><i class="fa fa-plus"></i></a>
-                  </div>
-                </div>
-                <div class="item screenshot-block">
-                  <img src="./assets/images/screenshot.jpg" alt="GRAPE">
-                  <div class="caption">
-                    <a class="test-popup-link" href="./assets/images/screenshot.jpg"><i class="fa fa-plus"></i></a>
-                  </div>
-                </div>
-                <div class="item screenshot-block">
-                  <img src="./assets/images/screenshot.jpg" alt="GRAPE">
-                  <div class="caption">
-                    <a class="test-popup-link" href="./assets/images/screenshot.jpg"><i class="fa fa-plus"></i></a>
-                  </div>
-                </div>
-                <div class="item screenshot-block">
-                  <img src="./assets/images/screenshot.jpg" alt="GRAPE">
-                  <div class="caption">
-                    <a class="test-popup-link" href="./assets/images/screenshot.jpg"><i class="fa fa-plus"></i></a>
-                  </div>
-                </div>
-                <div class="item screenshot-block">
-                  <img src="./assets/images/screenshot.jpg" alt="GRAPE">
-                  <div class="caption">
-                    <a class="test-popup-link" href="./assets/images/screenshot.jpg"><i class="fa fa-plus"></i></a>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- screenshot end -->
-
-    <!-- review start -->
-    <section id="review" class="review">
-      <div class="trans-bg"> 
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 text-center">
-              <h2 class="wow swing">reviews</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-12 text-center">
-              <div id="myCarousel1" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="active item">
-                    <span class="review-img">
-                       <img src="./assets/images/thumb-1.png" alt="image">
-                     </span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <span class="reviewer-name">Maria Jones</span>
-                    <span class="review-comp">CEO, GRAPE Ltd.</span>
-                  </div>
-                  <div class="item">
-                    <span class="review-img">
-                       <img src="./assets/images/thumb-1.png" alt="image">
-                     </span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <span class="reviewer-name">Maria Jones</span>
-                    <span class="review-comp">CEO, GRAPE Ltd.</span>
-                  </div>
-                  <div class="item">
-                    <span class="review-img">
-                       <img src="./assets/images/thumb-1.png" alt="image">
-                     </span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <span class="reviewer-name">Maria Jones</span>
-                    <span class="review-comp">CEO, GRAPE Ltd.</span>
-                  </div>
-                </div>
-                <!-- Carousel nav -->
-                <a class="carousel-control left" href="#myCarousel1" data-slide="prev"><i class="fa fa-angle-left"></i></a>
-                <a class="carousel-control right" href="#myCarousel1" data-slide="next"><i class="fa fa-angle-right"></i></a>              
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> <!-- /.trans-bg -->  
-    </section>
-    <!-- review end -->
-
-    <!-- price start -->
-    <section id="price" class="pricingtable-section white">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 text-center">
-            <span class="sub-head wow fadeInLeft">are you surrprised</span>            
-            <div class="title wow fadeInRight">
-              <h2>unbelievable price</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4 wow bounceInUp" data-wow-duration="1s">
-            <div class="price-block">
-              <div class="price-header">
-                <h3>free plan</h3>
-                <i class="fa fa-heart"></i>
-              </div>
-              <div class="price-plan">
-                <ul>
-                  <li>
-                    <span class="price">$0.00</span>
-                    <span class="month">/per month</span>
-                  </li>
-                  <li>Unlimited Space</li>
-                  <li>Unlimited Database</li>
-                  <li>Easy to Istall</li>
-                  <li>Unlimited Subdomains</li>
-                  <li>Dedicated Serer</li>
-                  <li> <a href="" class="btn">sign up</a></li>
-                </ul>
-              </div>
-            </div>
-            <!-- /.price-block -->
-          </div>
-          <div class="col-sm-4 wow bounceInUp" data-wow-duration="2s">
-            <div class="price-block active">
-              <div class="price-header">
-                <h3>basic plan</h3>
-                <i class="fa fa-cogs"></i>
-              </div>
-              <div class="price-plan">
-                <ul>
-                  <li>
-                    <span class="price">$9.00</span>
-                    <span class="month">/per month</span>
-                  </li>
-                  <li>Unlimited Space</li>
-                  <li>Unlimited Database</li>
-                  <li>Easy to Istall</li>
-                  <li>Unlimited Subdomains</li>
-                  <li>Dedicated Serer</li>
-                  <li> <a href="" class="btn">sign up</a></li>
-                </ul>
-              </div>
-            </div>
-            <!-- /.price-block -->
-          </div>
-          <div class="col-sm-4 wow bounceInUp" data-wow-duration="3s">
-            <div class="price-block">
-              <div class="price-header">
-                <h3>devloper plan</h3>
-                <i class="fa fa-suitcase"></i>
-              </div>
-              <div class="price-plan">
-                <ul>
-                  <li>
-                    <span class="price">$29.00</span>
-                    <span class="month">/per month</span>
-                  </li>
-                  <li>Unlimited Space</li>
-                  <li>Unlimited Database</li>
-                  <li>Easy to Istall</li>
-                  <li>Unlimited Subdomains</li>
-                  <li>Dedicated Serer</li>
-                  <li> <a href="" class="btn">sign up</a></li>
-                </ul>
-              </div>
-            </div>
-            <!-- /.price-block -->
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- price end -->
-
-    <!-- download start -->
-    <section id="download" class="downlaod">
-      <div class="trans-bg">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 text-center">
-              <h2 class="wow swing">download</h2>
-              <p>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
-              <span class="wow fadeInLeft" style="display:inline-block"><a href="" class="btn"><i class="fa fa-apple"></i> app store</a></span>
-              <span class="wow fadeInLeft" style="display:inline-block"><a href="" class="btn"><i class="fa fa-android"></i> play store</a></span>
-              <span class="wow fadeInLeft" style="display:inline-block"><a href="" class="btn"><i class="fa fa-windows"></i> windows</a></span>
-            </div>
-          </div>
-        </div>
-      </div> <!-- /.trans-bg -->  
-    </section>
-    <!-- download end -->
-
-    <!-- support start -->
-    <section id="support" class="support white">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 text-center">
-            <span class="sub-head wow fadeInLeft">stay close</span>
-            <div class="title wow fadeInRight">
-              <h2>help & support</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4 wow bounceInUp" data-wow-duration="1s">
-            <div class="support-block">
-              <span class="support-icon"><i class="fa fa-bitbucket"></i></span>
-              <h3>Product Support</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
-            </div>
-          </div>
-          <div class="col-sm-4 wow bounceInUp" data-wow-duration="2s">
-            <div class="support-block active">
-              <span class="support-icon"><i class="fa fa-bullhorn"></i></span>
-              <h3>Product Support</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
-            </div>
-          </div>
-          <div class="col-sm-4 wow bounceInUp" data-wow-duration="3s">
-            <div class="support-block">
-              <span class="support-icon"><i class="fa fa-stethoscope"></i></span>
-              <h3>Product Support</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- support end --> 
-
-    <!-- subscription start -->
-    <section id="subscription" class="subscription"> 
-      <div class="trans-bg">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 col-sm-offset-3 text-center">
-            <h2 class="wow swing">newsletter sign up</h2>
-            <form class="newsletter-signup">
-              <p class="newsletter-success"></p>
-              <p class="newsletter-error"></p>
-              <div class="input-group">
-                <input type="email" name="email" placeholder="Enter Your Email Address" class="form-control wow fadeInLeft">
-                <span class="input-group-btn wow fadeInRight">
-                <input type="submit" value="subscribe" class="btn btn-sub">
-                </span>
-              </div><!-- /.input-group -->
-            </form>
-            </div>
-          </div>
-        </div>
-      </div> <!-- /.trans-bg --> 
-    </section>
-    <!-- subscription end -->
-
-    <!-- contact start -->
-    <section id="contact" class="contact white tab-content">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs text-center" role="tablist">
-              <li class="wow rollIn animated" data-wow-duration="1s"><a href="#contact-info" role="tab" data-toggle="tab"><i class="fa fa-paper-plane"></i>
-                </a></li>
-              <li class="active wow rollIn animated" data-wow-duration="2s"><a href="#contact-form" role="tab" data-toggle="tab"><i class="fa fa-envelope"></i></a></li>
-              <li class="wow rollIn animated" data-wow-duration="3s"><a href="#contact-map" class="contact-map" role="tab" data-toggle="tab"><i class="fa fa-map-marker"></i></a></li>
-            </ul>            
-          </div>
-        </div>
-      </div>
-       <!-- Tab panes -->            
-      <div class="tab-content">
-        <div class="tab-pane contact-info" id="contact-info">
-          <div class="container">
-            <div class="row">
-            <div class="col-sm-12 text-center">            
-              <span class="sub-head">we are here</span>
-              <div class="title">
-                <h2>get in touch</h2>
-              </div>
-            </div>
-          </div>
-            <div class="row text-center">
-              <div class="col-sm-4">
-                <div class="info-holder">
-                  <i class="fa fa-taxi"></i>
-                   <br>
-                   <p>
-                     14/4 <br>
-                     Burnaby <br>
-                     BC, Canada 
-                   </p>
-                </div>                
-              </div>
-              <div class="col-sm-4">
-                <div class="info-holder">
-                  <i class="fa fa-mobile"></i>
-                  <br>
-                  <p>+1778-885-0000
-                  <br>
-                  +1778-885-1111
-                  <br>
-                  +6698 55514 68
-                  </p>
-                </div>                
-              </div>
-              <div class="col-sm-4">
-                <div class="info-holder">
-                  <i class="fa fa-reply"></i>
-                  <br>
-                  <p>
-                    info@domain.com
-                    <br>
-                    hello@gmail.com
-                  </p>
-                </div>                
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="tab-pane active contact-info" id="contact-form">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-12 text-center">            
-                <span class="sub-head">we are here</span>
-                <div class="title">
-                  <h2>get in touch</h2>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <form class="form-horizontal" role="form">
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                      <div class="span-form">
-                        <input class="form-control" type="text" placeholder="First name" required="required">
-                      </div>
-                      <div class="span-form">
-                        <input type="text" class="form-control" placeholder="Last name" required="required">
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <input type="email" class="form-control" placeholder="Email address" required="required">
-                    </div>
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Subject" required="required">
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                      <textarea name="" class="form-control btn-block" rows="3"></textarea>
-                    </div>
-                    <div class="form-group">
-                      <input type="submit" class="btn btn-block" value="send message">
-                    </div>
-                  </div>
-                  <div class="col-sm-12">
-                    <p class="contact-success">Your Message has been Successfully Sent!</p>
-                    <p class="contact-error">Error! Something went wrong!</p>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="tab-pane contact-info" id="contact-map">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-12 text-center">            
-                <span class="sub-head">we are here</span>
-                <div class="title">
-                  <h2>get in touch</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="map">
-            
-          </div>
-        </div>
-      </div>  
-    </section>
-    <!-- contact end -->
-
-    <!-- footer start -->
-    <footer id="footer">
-      <div class="trans-bg">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 text-center">
-              <div class="social-icon">
-               <a href="" class="wow rollIn animated" data-wow-delay=".1s"><i class="fa fa-facebook"></i></a>
-               <a href="" class="wow rollIn animated" data-wow-delay=".2s"><i class="fa fa-twitter"></i></a>
-               <a href="" class="wow rollIn animated" data-wow-delay=".3s"><i class="fa fa-google-plus"></i></a>
-               <a href="" class="wow rollIn animated" data-wow-delay=".4s"><i class="fa fa-pinterest"></i></a>
-               <a href="" class="wow rollIn animated" data-wow-delay=".5s"><i class="fa fa-rss"></i></a>
-               <a href="" class="wow rollIn animated" data-wow-delay=".6s"><i class="fa fa-linkedin"></i></a>
-               <a href="" class="wow rollIn animated" data-wow-delay=".7s"><i class="fa fa-vimeo-square"></i></a>
-               <a href="" class="wow rollIn animated" data-wow-delay=".8s"><i class="fa fa-youtube-square"></i></a>
-               <a href="" class="wow rollIn animated" data-wow-delay=".9s"><i class="fa fa-dribbble"></i></a>
-              </div>
-              <div class="copyright">
-                <p>&copy; <span>GRAPE</span>2015, all right reserved</p>
-                <p>Design by <span>CodePassenger</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="go-to-top">
-            <a href="#banner"></a>
-        </div>
-        <!--/.go-to-top end-->
-      </div> <!-- /.trans-bg -->
-    </footer>
-    <!-- footer end -->   
-     
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-     <!-- <script src="https://code.jquery.com/jquery.js"></script> -->
-    <script src="assets/js/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/smoothscroll.js"></script>
-      <script src="assets/js/jquery.scrollTo.min.js"></script>
-      <script src="assets/js/jquery.localScroll.min.js"></script>
-    <script src="assets/js/jquery.nav.js"></script>
-    <script src="assets/js/owl.carousel.js"></script>
-    <script src="assets/js/jquery.magnific-popup.js"></script>
-    <script src="assets/js/jquery.parallax.js"></script>
-    <script src="assets/js/jquery.flexslider-min.js"></script>
-    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
-    <script src="assets/js/matchMedia.js"></script>
-    <script src="assets/js/script.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-    <script src="assets/js/wow.js"></script>
-    <script src="assets/js/easing.js"></script>
-    
+            <h3>"Tell me something about the technology"</h3>
+            <p>Our stores are powered by the WordPress / WooCommerce stack. Wordpress is used on 20% of ALL websites in the world. It is well known for its ease of operation and SEO friendliness. WooCommerce, built on top of WordPress, powers over 600,000 eCommerce sites worldwide. You are in good company.</p>
+
+
+            <h3>"But how can you afford to keep free? And what do you mean by no-frills?"</h3>
+            <p>"We keep our costs low", he said, "We prefer to spend only on what really helps our customers. You should see our website to see how frugal we are!"</p>
+            <ul>
+              <li>We don't have a separate sales and marketing team. Our customers are our best marketing agents</li>
+              <li>We don't offer phone supoprt. The seller community we are building will be able to support each other much better than anything customer support team."</li>
+              <li>We don't offer Google or FB ad credits</li>
+              <li>We don't offer free payment gateways. PayUMoney offers a free payment gateway that you can integrate with your site.</li>
+            </ul>
+
+
+            <h3>"What do you mean by community of sellers?"</h3>
+            <p>"We are building an online forum where sellers can get supoprt, ask questions and seek tips. You would benefit from the experiences of veteran sellers as well as industry experts. Our team would be actively engaged in the forum, which would also serve as the primary means of customer support."</p>
+
+
+            <h3>"Is is free forever?"</h3>
+            <p>"For small sellers, yes. We charge on a per-order basis. The first hundred orders you get on your store every month are not charged. Thereafter, we charge Rs. 10 per order. That way, your costs are aligned to how well your business is doing."</p>
+
+            <h3>Trying it out herself</h3>
+            <p>"Why don't you check out some of our demo stores?" he suggested, "You can access them from the navigation menu. Use a username of 'storeowner' and password 'W00Plaza!' (without quotes)"</p>
+
+            <p>Shikha played around with the backend interface of some of the demo stores. Not only were the storefronts gorgeous, the admin interface was completely intuitive and better than anything else she had used. She was completely sold.</p>
+
+            <h3> "When are you launching?"</h3>
+			<p>We are seeking signups now. Our first batch of sellers will start selling in July. We plan to keep the number of seller under 100 during launch. Once we fine-tune our processes, we will accept morre sign ups a few months down the line.</p>
+
+			<h3>Her heart sank. "What criteria would you use for accepting the initial set of sellers?"</h3>
+			<p>Our intent is to build a community of sellers who will support and help each other grow. To that extent, we will give preference to groups of friends who want to sell online. So, be sure to share this site with your friends and convince them to sign up too!</p>
+
+
+
+          </div>
+          <div class="fb-comments" data-href="http://www.wooplaza.com" data-width="100%" data-numposts="5" data-colorscheme="light"></div>
+        </div><!--/.col-xs-12.col-sm-9-->
+<!--
+        <footer class="footer">
+          <div class="container-fluid bg-primary">
+            <div class="btn-toolbar">
+              <div class="btn-group pull-left">
+                <a href="#" class="btn btn-primary"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="btn btn-primary"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="btn btn-primary"><i class="fa fa-whatsapp"></i></a>
+              </div>
+
+              <div class="btn-group pull-right">
+                <a class="btn btn-primary"><div class="fb-like" data-href="http://www.wooplaza.com" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div></a>
+                <a class="btn btn-primary"><div class="fb-share-button" data-href="http://www.wooplaza.com" data-layout="button"></div></a></a>
+                <a class="btn btn-primary"><div class="fb-send" data-href="http://www.wooplaza.com"></div></a>
+              </div>
+
+            </div>
+          </div>
+        </footer>
+-->
+        <footer class="footer">
+          <div class="container-fluid bg-primary">
+              <span class="center-block">
+                <span class="label label-primary"><a href="#"><i class="fa fa-facebook"></i></a></span>
+                <span class="label label-primary"><a href="#"><i class="fa fa-twitter"></i></a></span>
+                <span class="label label-primary"><a href="#"><i class="fa fa-google-plus"></i></a></span>
+                <span class="label label-primary"><a href="#"><i class="fa fa-whatsapp"></i></a></span>
+                <span class="label label-primary"><div class="fb-like" data-href="http://www.wooplaza.com" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div></span>
+                <span class="label label-primary"><div class="fb-share-button" data-href="http://www.wooplaza.com" data-layout="button"></div></span>
+                <span class="label label-primary"><div class="fb-send" data-href="http://www.wooplaza.com"></div></span>
+              </span>
+          </div>
+        </footer>
+
+
+
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+          <div class="list-group">
+            <a class="list-group-item active">Demo Stores</a>
+            <a href="#" class="list-group-item">Demo 1</a>
+            <a href="#" class="list-group-item">Demo 2</a>
+            <a href="#" class="list-group-item">Demo 3</a>
+            <a href="#" class="list-group-item">Demo 4</a>
+            <a href="#" class="list-group-item">Demo 5</a>
+            <a href="#" class="list-group-item">Demo 6</a>
+            <a href="#" class="list-group-item">Demo 7</a>
+            <a href="#" class="list-group-item">Demo 8</a>
+            <a href="#" class="list-group-item">Demo 9</a>
+          </div>
+        </div><!--/.sidebar-offcanvas-->
+      </div><!--/row-->
+
+
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="ie10-viewport-bug-workaround.js"></script>
+    <script src="offcanvas.js"></script>
     <script>
-        $(document).ready(function() {
-        // "use strict";
-        $('#banner').parallax("50%", 0.5, true);
-            $('#feature').parallax("50%", 0.5, true);
-            $('#video').parallax("50%", 0.5, true);
-            $('#subscription').parallax("50%", 0.5, true);
-            $('#review').parallax("50%", 0.5, true);
-            $('#download').parallax("50%", 0.5, true);
-        $('#footer').parallax("50%", 0.5, true);
-        });
-
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "http://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.3";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
     </script>
 
-    <script>
-      // --------Google map---------------
-         var map;
-         function initialize() {  
-          // Create an array of styles.
-          var styles = [
-            {
-              stylers: [
-                { hue: "#0AABE1" },
-                { saturation: 0 }
-              ]
-            },
-            {
-              featureType: 'water',
-              stylers: [
-               { visibility: "on" },
-               { color: "#9a9efd" },
-               { weight: 2.2 },
-               { gamma: 2.54 }
-              ] 
-            },
-            {
-              featureType: "road",
-              elementType: "geometry",
-              stylers: [
-                { lightness: 100 },
-                { visibility: "simplified" }
-              ]
-            },{
-              featureType: "road",
-              elementType: "labels",
-              stylers: [
-                { visibility: "off" }
-              ]
-            }
-          ];
 
-          // Create a new StyledMapType object, passing it the array of styles,
-          // as well as the name to be displayed on the map type control.
-          var styledMap = new google.maps.StyledMapType(styles,
-            {name: "Styled Map"});
-
-          // Create a map object, and include the MapTypeId to add
-          // to the map type control.
-          var losAngeles = new google.maps.LatLng(33.8030716,-118.0725641);
-          var mapOptions = {
-            zoom: 13,
-            center: losAngeles,
-            mapTypeControlOptions: {
-              mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
-            },
-            scrollwheel: false,
-          };
-          var map = new google.maps.Map(document.getElementById('map'),
-            mapOptions);
-          
-
-          //Associate the styled map with the MapTypeId and set it to display.
-          map.mapTypes.set('map_style', styledMap);
-          map.setMapTypeId('map_style');
-
-          // To add the marker to the map, use the 'map' property
-          var image = 'assets/images/map_icon_3.png';
-          var marker = new google.maps.Marker({
-              position: losAngeles,
-              map: map,
-              title:"GRAPE App Store!",
-              icon: image
-          });
-
-         }
-        
-    </script>
-       
   </body>
 </html>
