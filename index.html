@@ -81,29 +81,15 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <a id="mainlogo" class="navbar-brand" style="font-family: 'Pacifico', cursive">WP</a>
-          <div id="mc_embed_signup" class="navbar-form navbar-left"> <!-- Begin MailChimp Signup Form -->
-            <form action="//wooplaza.us10.list-manage.com/subscribe/post?u=0399ad6744d5512f0a33e1bbf&amp;id=1b7f3ac36c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-              <div id="mc_embed_signup_scroll">
-                <div class="mc-field-group form-group">
-                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Sign up">
-                </div>
-                <button type="submit" class="button btn btn-xs btn-primary" name="subscribe" id="mc-embedded-subscribe">Go</button>
-              <div id="mce-responses" class="clear">
-              <div class="response" id="mce-error-response" style="display:none"></div>
-              <div class="response" id="mce-success-response" style="display:none"></div>
-              </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                <div style="position: absolute; left: -5000px;"><input type="text" name="b_0399ad6744d5512f0a33e1bbf_1b7f3ac36c" tabindex="-1" value=""></div>
-              </div>
-            </form>
-          </div> <!-- End MailChimp Signup Form -->
+          <a href="#intro" class="navbar-brand" style="font-family: 'Pacifico', cursive"><i class="fa fa-2x fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;</a>
+          <a href="#" class="navbar-brand bg-primary" id="signup" >Sign Up</a>
+          <a href="#" class="navbar-brand visible-xs" data-toggle="offcanvas">Demo Stores</a>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <button type="button" class="btn btn-primary navbar-toggle collapsed pull-right visible-xs" data-toggle="offcanvas">Demo</button>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -215,16 +201,17 @@
         </div><!--/.col-xs-12.col-sm-9-->
         <footer class="footer">
           <div class="container-fluid bg-primary">
-              <span class="center-block">
-                <span class="label label-primary"><a href="#"><i class="fa fa-facebook"></i></a></span>
-                <span class="label label-primary"><a href="#"><i class="fa fa-twitter"></i></a></span>
-                <span class="label label-primary"><a href="#"><i class="fa fa-google-plus"></i></a></span>
-                <span class="label label-primary"><a href="#"><i class="fa fa-whatsapp"></i></a></span>
-                <span class="label label-primary"><div class="fb-like" data-href="http://www.wooplaza.com" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div></span>
-                <span class="label label-primary"><div class="fb-share-button" data-href="http://www.wooplaza.com" data-layout="button"></div></span>
-                <span class="label label-primary"><div class="fb-send" data-href="http://www.wooplaza.com"></div></span>
-              </span>
-          </div>
+            <div class="row">
+                <span><a href="#"><i class="fa fa-facebook"></i></a></span>
+                <span><a href="#"><i class="fa fa-twitter"></i></a></span>
+                <span><a href="#"><i class="fa fa-google-plus"></i></a></span>
+                <span><a href="#"><i class="fa fa-whatsapp"></i></a></span>
+            </div>
+            <div class="row">
+                <span><div class="fb-like" data-href="http://www.wooplaza.com" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div></span>
+                <span><div class="fb-share-button" data-href="http://www.wooplaza.com" data-layout="button"></div></span>
+                <span><div class="fb-send" data-href="http://www.wooplaza.com"></div></span>
+            </div>
         </footer>
 
 
@@ -255,6 +242,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js.cookie.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 
@@ -321,10 +309,10 @@
     <!--script type="text/javascript" src="embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script-->
     <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson:true, isDebug:false"></script>
     <script type="text/javascript">
-//        $("#mainlogo").on("click", function() {
-          console.log("Executing")
+        $("#signup").on("click", function() {
+          Cookies.remove("MCEvilPopupClosed");
           require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us10.list-manage.com","uuid":"0399ad6744d5512f0a33e1bbf","lid":"1b7f3ac36c"}) })
-//        })
+        })
     </script>
   </body>
 </html>
